@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h2>Current Player: <span id="current"></span></h2>
+        </header>
+
+        <div class="game">
+            <div class="player">
+                <h2>Player X</h2>
+                <p>
+                    <ul>
+                        <li>Wins: <span id="wins-1">0</span></li>
+                        <li>Ties: <span id="ties-1">0</span></li>
+                        <li>Losses: <span id="losses-1">0</span></li>
+                    </ul>
+                </p>
+            </div>
+            <div class="game-board">
+
+                <button class="hover-effect" id="btn-1">
+                    <img src="" alt="">
+                </button>
+
+                <button class="hover-effect" id="btn-2">
+                    <img src="" alt="">
+                </button>
+
+                <button class="hover-effect" id="btn-3">
+                    <img src="" alt="">
+                </button>
+
+                <button class="hover-effect" id="btn-4">
+                    <img src="" alt="">
+                </button>
+
+                <button class="hover-effect" id="btn-5">
+                    <img src="" alt="">
+                </button>
+
+                <button class="hover-effect" id="btn-6">
+                    <img src="" alt="">
+                </button>
+
+                <button class="hover-effect" id="btn-7">
+                    <img src="" alt="">
+                </button>
+
+                <button class="hover-effect" id="btn-8">
+                    <img src="" alt="">
+                </button>
+
+                <button class="hover-effect" id="btn-9">
+                    <img src="" alt="">
+                </button>
+
+            </div>
+            <div class="player">
+                <h2>Player O</h2>
+                <p>
+                    <ul>
+                        <li>Wins: <span id="wins-2">0</span></li>
+                        <li>Ties: <span id="ties-2">0</span></li>
+                        <li>Losses: <span id="losses-2">0</span></li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <button id="restart-btn">Restart</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

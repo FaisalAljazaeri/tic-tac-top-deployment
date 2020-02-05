@@ -1,0 +1,105 @@
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.game {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.game-board {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.player {
+    width: 33%;
+}
+
+.game button {
+    width: 33%;
+    height: 130px;
+    padding: 0;
+    background-color: #6d0f0f;
+    border: 3px solid #FFF;
+}
+
+.hover-effect:hover {
+    background-color: #e70e0e;
+    cursor: pointer;
+}
+
+.game button.clicked {
+    background-color: #e70e0e;
+}
+
+li {
+    list-style: none;
+    text-align: left;
+    font-size: 18px;
+    margin: 5% 35%;
+}
+
+.game-board button.green {
+    background-color: green;
+}
+
+button img {
+    height: inherit;
+    width: 100%;
+}
+
+#current {
+    color: #2CC135;
+}
+
+#restart-btn {
+    margin: 10px auto;
+    height: 40px;
+    width: 140px;
+    background-color: #155a07;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    font-family: inherit;
+    border: 2px solid #FFF;
+}
+
+#restart-btn:hover {
+    background-color: #21d121;
+}
+
+@media (max-width:900px) {
+    li {
+        font-size: 15px;
+        margin: 5% 20%;
+    }
+
+    .game-board {
+        width: 50%;
+    }
+}
+
+@media (max-width:600px) {
+    .game-board {
+        width: 90%;
+    }
+
+    .player {
+        width: 50%;
+        order: -1;
+    }
+
+    .game {
+        flex-wrap: wrap;
+    }
+
+}
